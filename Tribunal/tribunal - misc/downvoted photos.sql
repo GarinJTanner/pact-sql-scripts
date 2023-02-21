@@ -1,0 +1,1 @@
+select photo_url from attendances where id in (select voteable_id from votes where user_id=XXXXXXX and opinion=0 and id>=@vyear)

@@ -1,0 +1,3 @@
+select * from pacts 
+where pact_type=2 and processing_status is null and end_date="2017-01-22" and days_attended!=days_committed and program_type=1 and user_id in (select user_id from money_accounts where active=1 and type!="pactbucksaccount")
+   or pact_type=3 and processing_status is null and end_date="2017-01-22" and days_attended!=days_committed and program_type=1 and user_id in (select user_id from money_accounts where active=1 and type!="pactbucksaccount")

@@ -1,0 +1,1 @@
+select email, flag_status from users where id in (select distinct user_id from money_accounts where paypal_name like "Allan Alves")

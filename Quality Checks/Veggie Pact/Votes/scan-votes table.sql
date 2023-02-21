@@ -1,0 +1,2 @@
+select created_at, count(*) from votes where voteable_id in (select id from attendances where activity_type_code=201 and status_code=61) and voteable_id in (select distinct voteable_id from votes)
+group by left(created_at, 10) order by created_at desc

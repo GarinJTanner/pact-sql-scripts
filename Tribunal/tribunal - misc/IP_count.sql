@@ -1,0 +1,3 @@
+select updated_at, id, login, email, flag_status, current_login_ip, last_login_ip, delete_request_time, deleted_time 
+from users where current_login_ip in (select current_login_ip from users where id = @user_id) and id in (select user_id from pacts where program_type=1) 
+or last_login_ip in (select last_login_ip from users where id = @user_id) and id in (select user_id from pacts where program_type=1) order by login asc;

@@ -1,0 +1,1 @@
+select email from users where id in (select user_id from money_accounts where cc_fingerprint="IAxdp4ajqrkpjxW8")

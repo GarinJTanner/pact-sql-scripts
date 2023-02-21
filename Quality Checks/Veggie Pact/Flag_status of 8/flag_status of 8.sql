@@ -1,0 +1,1 @@
+select * from users where flag_status=8 and is_deleted=0 and id in (select member_id from attendances where id>@ayear);

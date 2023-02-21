@@ -1,0 +1,3 @@
+select email from users where email like "%.con" or email like "%.co" or email like "%.ner" or email like "%.ney" or email like "%.neg"  or
+email like "%.ne" or email like "%.ort" or email like "%.orh" or email like "%.orv" or email like "%.bet" or email like "%.con"  
+or email not like "%.com" and email not like "%.net" and email not like "%.org" and email not like "%.edu" and email not like "%.mil" 
