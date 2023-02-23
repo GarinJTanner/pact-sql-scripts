@@ -1,6 +1,6 @@
 ## BAN QUERY
 
-This query was intended to be an automated ban script. It is an accumulation of all behavior that I have considered to be exploitative.
+This query was intended to be an automated ban script. It is an accumulation of all behavior that should be automatic bans.
 
 ## BAN QUERY - already warned
 
