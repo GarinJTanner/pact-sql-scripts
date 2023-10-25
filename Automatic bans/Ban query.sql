@@ -1,4 +1,4 @@
-select id, email, updated_at from users where id in (
+update users set flag_status=1 where id in (
 
 -- emulators
 select ud.user_id from users_devices ud, devices d where 
